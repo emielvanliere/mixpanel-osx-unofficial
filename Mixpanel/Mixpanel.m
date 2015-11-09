@@ -694,6 +694,7 @@ static Mixpanel *sharedInstance = nil;
                                                         userInfo:nil
                                                          repeats:YES];
             MixpanelDebug(@"%@ started flush timer: %@", self, self.timer);
+            [self.timer fire];
         }
     });
 }
